@@ -1,10 +1,21 @@
-# Gitpod Flutter
+## Gitpod Flutter
+
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/vtorres/gitpod-flutter)
 
+[![made-with-flutter](https://img.shields.io/badge/Made%20with-Gitpod-1f425f.svg)](https://www.python.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-1f425f.svg)](https://github.com/vtorres/youcheater/blob/master/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/vtorres/gitpod-flutter?style=social&label=Star)](https://github.com/vtorres/gitpod-flutter/)
+
 ## Setup
 
-### Mobile
+### Web
+
+```
+  flutter run -d web-server --web-port=8080 --web-hostname=0.0.0.0
+```
+
+### Mobile with remote adb
 
 ###### Check your mobile lan ip and feel free to use your own port configuration
 
@@ -37,15 +48,5 @@
 
 ```
   adb connect NGROK_ADDRESS:NGROK_PORT
-  flutter run
-```
-
-### Web
-
-- As web support hasn’t yet reached alpha, you can expect to experience crashes and missing features.
-- The website URL may be very slow to load on first access.
-- It needs to run and kill the server a few times before the Gitpod finds the dynamic port allocation and lets you expose the right port on the Open Ports tab.
-
-```
-  flutter run -d web
+  flutter run -d NGROK_ADDRESS:NGROK_PORT
 ```
