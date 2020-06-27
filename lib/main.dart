@@ -1,6 +1,7 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(CupertinoApp(home: MyApp()));
 
 class MyApp extends StatelessWidget {
   @override
@@ -25,38 +26,24 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text(
-              ':',
+            Image(
+              image: AssetImage('assets/images/logo.png'),
             ),
             Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.display1,
+              'GSS Paraguay',
+              style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
             ),
+            Text('Desarrollado por DR2GSistemas'),
+            Text('Version: 2020.1.0')
           ],
         ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Gitpod',
-        child: Icon(Icons.add),
       ),
     );
   }
