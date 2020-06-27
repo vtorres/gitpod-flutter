@@ -36,12 +36,20 @@ class _MyHomePageState extends State<MyHomePage> {
             Image(
               image: AssetImage('assets/images/logo.png'),
             ),
-            Text(
-              'GSS Paraguay',
-              style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
+            Padding(
+                child: Text(
+                  'GSS Paraguay',
+                  style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
+                ),
+                padding: EdgeInsets.all(15.0)),
+            Padding(
+              child: Text('Desarrollado por DR2GSistemas'),
+              padding: EdgeInsets.all(5.0),
             ),
-            Text('Desarrollado por DR2GSistemas'),
-            Text('Version: 2020.1.0')
+            Padding(
+              child: Text('Version: 2020.1.0'),
+              padding: EdgeInsets.all(5.0),
+            ),
           ],
         ),
       ),
