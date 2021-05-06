@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM gitpod/workspace-full:latest
 
 USER root
 
