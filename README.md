@@ -1,4 +1,4 @@
-Credit to [!vtorres](https://github.com/vtorres/gitpod-flutter) for original dockerfile
+Credit to [![vtorres](https://github.com/vtorres/gitpod-flutter) for original dockerfile
 ## Gitpod Flutter
 
 
