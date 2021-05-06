@@ -1,6 +1,4 @@
-FROM gitpod/workspace-full:latest
-
-LABEL maintainer="vitortorresvt@gmail.com"
+FROM alpine:3.7
 
 USER root
 
