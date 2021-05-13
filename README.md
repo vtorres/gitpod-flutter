@@ -15,8 +15,8 @@ Credit to [![vtorres](https://github.com/vtorres/gitpod-flutter) for original do
 flutter run -d web-server
 ```
 - The command will run and give an output saying that the project is being hosted on localhost:8080 (localhost port 8080)
-- [![Access the port view](https://i.ibb.co/L9zKDRK/indication.png)
-- [![Open port in simple browser](https://i.ibb.co/mqd68v9/indication2.png)
+- ![Access the port view](https://i.ibb.co/L9zKDRK/indication.png)
+- ![Open port in simple browser](https://i.ibb.co/mqd68v9/indication2.png)
 - *This is is a flutter web project so there will be no hot reload, to test the app with changes press r in the console/terminal and then press the reload button on the simple browser tab.*
 -  
 
