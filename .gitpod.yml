@@ -20,6 +20,8 @@ ports:
     onOpen: open-preview
   - port: 5037
     onOpen: ignore
+  - port: 6080
+    protocol: "http"
 vscode:
   extensions:
     - Dart-Code.flutter@3.7.1:gujVOCgsbgoN2/po8X1tfA==
