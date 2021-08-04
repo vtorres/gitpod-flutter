@@ -37,7 +37,7 @@ RUN $FLUTTER_HOME/bin/flutter channel master
 RUN $FLUTTER_HOME/bin/flutter upgrade
 RUN $FLUTTER_HOME/bin/flutter precache
 RUN $FLUTTER_HOME/bin/flutter config --enable-web --no-analytics
-RUN yes "y" | $FLUTTER_HOME/bin/flutter doctor --android-licenses -v
+RUN yes | "${ANDROID_HOME}/tools/bin/sdkmanager" --licenses
 ENV PUB_CACHE=/workspace/.pub_cache
 
 # Env
