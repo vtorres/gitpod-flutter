@@ -6,10 +6,11 @@ tasks:
       source ~/.bashrc
     init: |
       echo "Wait for the installation"
-      yes | sdk i java 8.0.232-open
+      yes | sdk install java 8.0.292-open
       sdk i kotlin
       sdkmanager --update
       yes | sdkmanager --licenses
+      sdkmanager "platform-tools" "platforms;android-29"
       flutter pub get
       flutter run -d web-server --no-resident
     command: >
